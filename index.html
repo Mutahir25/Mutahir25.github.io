@@ -1,0 +1,69 @@
+<html>
+
+
+<head>
+    <style>
+        #first-line {
+            color: green;
+            font-size: 150%;
+            font-style: initial;
+            position: absolute;
+            left: 50%;
+
+
+        }
+
+        #second-line {
+            color: blue;
+            font-size: 150%;
+            font-style: oblique;
+
+        }
+
+        #line3 {
+            color: brown;
+            font-size: 150%;
+            font-style: oblique;
+
+        }
+
+        #line4 {
+            color: darkcyan;
+            font-size: 150%;
+            font-style: unset;
+
+        }
+
+        #line5 {
+            color: red;
+            font-size: 200%;
+
+        }
+
+        #mainbutton {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="first-line"> Front End Web Development </div>
+    <div id="second-line"> Training for</div>
+    <div id="line3"> Beginners</div>
+    <div id='line4'>by Ravi Teja</div>
+    <div id="line5">Started on 02-Feb-23</div>
+    <script>
+        const button = document.createElement('button')
+        button.innerText = 'click to register'
+        button.id = 'mainbutton'
+        button.addEventListener('click', () => { alert('Not Today!') })
+        document.body.appendChild(button)
+    </script>
+
+</body>
+
+
+</html>
